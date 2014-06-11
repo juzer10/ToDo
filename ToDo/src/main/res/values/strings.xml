@@ -2,7 +2,8 @@
 <resources>
 
     <string name="app_name">ToDo</string>
-    <string name="hello_world">Hello world!</string>
+    <string name="todo">Add reminder</string>
     <string name="action_settings">Settings</string>
-
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>
