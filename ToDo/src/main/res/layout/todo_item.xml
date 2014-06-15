@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/title_box"
+        android:layout_margin="15dp"
+        android:padding="7dp"
+        android:hint="@string/title_hint"
+        android:background="@drawable/text_box"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:id="@+id/note_box"
+        android:layout_margin="15dp"
+        android:padding="7dp"
+        android:background="@drawable/text_box"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/reminder"
+        android:layout_margin="15dp"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:background="@color/blue"
+        android:textColor="@color/white"
+        android:drawableLeft="@drawable/ic_reminder"
+        android:text="@string/remind"
+        />
+
+</LinearLayout>

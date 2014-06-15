@@ -20,7 +20,7 @@ public class SplashScreen extends Activity {
             {
                 try {
                     Thread.sleep(sec);
-                    Intent i = new Intent(SplashScreen.this, ToDoList.class);
+                    Intent i = new Intent(SplashScreen.this, NewItem.class);
                     startActivity(i);
                     finish();
                 }

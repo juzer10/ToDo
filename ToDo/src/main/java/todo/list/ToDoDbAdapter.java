@@ -95,6 +95,37 @@ public class ToDoDbAdapter {
         return mCursor;
     }
 
+    // TODO: Complete Date Time code
+   /* public Cursor fetchItemsByDate(int c) {
+        switch (c)
+        {
+            case 0: //Past Tasks
+                Cursor mCursor = mDb.query(TABLE_NAME, new String[] {COLUMN_TITLE_NAME, COLUMN_NOTE_NAME, COLUMN_DATETIME}, , null, null, null, null);     Code for Date selection
+                if (mCursor != null)
+                    mCursor.moveToFirst();
+                break;
+
+            case 1: //Today's Tasks
+                Cursor mCursor = mDb.query(TABLE_NAME, new String[] {COLUMN_TITLE_NAME, COLUMN_NOTE_NAME, COLUMN_DATETIME}, , null, null, null, null);     Code for Date selection
+                if (mCursor != null)
+                    mCursor.moveToFirst();
+                break;
+
+            case 2: // Tomorrow's Tasks
+                Cursor mCursor = mDb.query(TABLE_NAME, new String[] {COLUMN_TITLE_NAME, COLUMN_NOTE_NAME, COLUMN_DATETIME}, , null, null, null, null);     Code for Date selection
+                if (mCursor != null)
+                    mCursor.moveToFirst();
+                break;
+
+            case 3: //Later
+                Cursor mCursor = mDb.query(TABLE_NAME, new String[] {COLUMN_TITLE_NAME, COLUMN_NOTE_NAME, COLUMN_DATETIME}, , null, null, null, null);     Code for Date selection
+                if (mCursor != null)
+                    mCursor.moveToFirst();
+                break;
+        }
+        return mCursor;
+    }*/
+
     public boolean UpdateItem(int rowId, String Title, String Note, int date_time) {
         ContentValues updatedValues = new ContentValues();
         updatedValues.put(COLUMN_TITLE_NAME, Title);
