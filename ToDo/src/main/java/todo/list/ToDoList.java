@@ -19,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -90,6 +91,15 @@ public class ToDoList extends ListActivity {
         mDrawerList.setAdapter(new ArrayAdapter<String>(this, R.layout.drawer_list_item, mNavigationDrawerItems));
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
+        EditText titleBox = (EditText) findViewById(R.id.title_box);
+
+
+    }
+
+
+    @Override
+    protected void onListItemClick(ListView l, View v, int position, long id) {
+        super.onListItemClick(l, v, position, id);
 
     }
 
@@ -97,10 +107,8 @@ public class ToDoList extends ListActivity {
        mcontext = this;
     }
 
-    public void dra(int pos) {
-       Log.i("App", "Here");
+    public void dra(int p){}
 
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -127,21 +135,6 @@ public class ToDoList extends ListActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * A placeholder fragment containing a simple view.
-     */
-    public static class PlaceholderFragment extends Fragment {
-
-        public PlaceholderFragment() {
-        }
-
-        @Override
-        public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                Bundle savedInstanceState) {
-            View rootView = inflater.inflate(R.layout.todo_list, container, false);
-            return rootView;
-        }
-    }
 
     @Override
     protected void onPostCreate(Bundle savedInstanceState) {

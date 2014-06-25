@@ -13,14 +13,14 @@ public class SplashScreen extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        final int sec = 1000;
+        final int sec = 000;
         setContentView(R.layout.splash_screen);
         new Thread(new Runnable() {
             public void run()
             {
                 try {
                     Thread.sleep(sec);
-                    Intent i = new Intent(SplashScreen.this, NewItem.class);
+                    Intent i = new Intent(SplashScreen.this, ToDoList.class);
                     startActivity(i);
                     finish();
                 }
